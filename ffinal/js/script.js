@@ -1,7 +1,3 @@
-
-
-
-
 $(document).ready(function(){
 
     // Componente Precarga Barra
@@ -14,6 +10,21 @@ $(document).ready(function(){
         opacity: 0
     },500,'easeInExpo');
 
+
+    //Activador de Slick Slider
+
+    $('.slick-inicio').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: true,
+        dots: true,
+        autoplaySpeed: 1500,
+        speed: 500,
+        fade: true,
+        infinite: true
+ 
+    });
 
     // Menu Responsive//
 
@@ -51,6 +62,7 @@ $(document).ready(function(){
             opacity: 1
 
         },300,'easeOutExpo');
+        event.preventDefault();
     });
 
     // Function para Detectar Scroll Down
@@ -150,6 +162,8 @@ $(document).ready(function(){
 
         $('#abre-fila-01').addClass('acord-abierto');
         $('#abre-fila-01').removeClass('acord-cerrado');
+
+        event.preventDefault();
     });
 
 
@@ -171,6 +185,8 @@ $(document).ready(function(){
 
         $('#abre-fila-02').addClass('acord-abierto');
         $('#abre-fila-02').removeClass('acord-cerrado');
+
+        event.preventDefault();
     });
 
 
@@ -192,6 +208,8 @@ $(document).ready(function(){
 
         $('#abre-fila-03').addClass('acord-abierto');
         $('#abre-fila-03').removeClass('acord-cerrado');
+
+        event.preventDefault();
     });
 
     // Acordeón abre de forma automática
@@ -200,19 +218,5 @@ $(document).ready(function(){
     $('#abre-fila-01').addClass('acord-abierto');
 
 
-    //Activador de Slick Slider
-
-    $('.slick-inicio').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        arrows: true,
-        dots: true,
-        autoplaySpeed: 1500,
-        speed: 500,
-        fade: true,
-        infinite: true
- 
-    });
 
 });
